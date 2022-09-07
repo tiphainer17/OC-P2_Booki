@@ -26,6 +26,10 @@ ul {
 /*==============   
       COMMUN
 ================*/
+/*header*/
+nav ul li{
+    margin: 20px;
+}
 /*recherche*/
 form {
     margin-top: 15px;
@@ -55,11 +59,118 @@ input[placeholder="Marseille, France"]{
     border-bottom: solid 2px #f2f2f2;
 }
 
-/*filtres a faire en mobile puis trier
+/*filtres*/
+#filtres i {
+    width: 46px;
+    height: 46px;
+    border-radius: 20px;
+    background-color: #DEEBFF;
+    color:#0065FC;
+    margin-top:-1px;
+    margin-left: -2px;
+    padding: 14px;
+    margin-right:10px;
+}
 
+#filtres li {
+    font-weight: bolder;
+    border: solid 0.5px;
+    border-color: lightgray;
+    border-radius: 20px;
+    height: 45px;
+    padding-right:15px;
+    margin-bottom: 20px;
+}
+
+#filtres li:hover {
+    background-color: #DEEBFF;
+}
+
+#s_infos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#s_infos i {
+    width: 25px;
+    height: 25px;
+    border: solid 0.5px;
+    border-color: lightgray;
+    border-radius: 20px;
+    color :#0065FC;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+/*gobale main*/
+span {
+    font-style: bold;
+}
+
+#etoiles {
+    color: #DEEBFF;
+}
+#e_bleu i {
+    color: #0065FC;
+}
+
+/*populaire*/
+#titre-pop{
+    display : flex ;
+    justify-content: space-between;
+}
+
+#titre-pop i{
+    font-size: 1.4em;
+}
+
+#l_pop {
+    display : flex ;
+    flex-wrap : wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#f_pop {
+    height: 130px;
+    border-radius: 20px;
+    padding:5px;
+    margin-bottom: 30px;
+    display:flex;
+}
+
+#i_pop_inf {
+    display:flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#i_pop_inf p {
+    margin-top: 10px;
+}
+
+#f_pop:hover {
+    transform: scale(1.05) translateY(-3px);
+    transition: all 0.2s;
+}
+
+#i_pop{
+    border-radius: 20px 0px 0px 20px;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figcaption{
+    font-weight: bolder;
+}
+
+/*activite, footer a faire et hebergement a finir*/
 
 /*==============   
-      ORDINATEUR
+    ORDINATEUR
 ================*/
 @media (min-width: 1350px) {
 
@@ -96,9 +207,6 @@ nav ul {
     margin-right: 50px;
 }
 
-nav ul li{
-    margin: 20px;
-}
 
 
 /*recherche*/
@@ -134,47 +242,11 @@ nav ul li{
     display: flex;
 }
 
-#filtres i {
-    width: 46px;
-    height: 46px;
-    border-radius: 20px;
-    background-color: #DEEBFF;
-    color:#0065FC;
-    margin-top:-1px;
-    margin-left: -2px;
-    padding: 14px;
-    margin-right:10px;
-}
 
 #filtres li {
-    font-weight: bolder;
-    border: solid 0.5px;
-    border-color: lightgray;
-    border-radius: 20px;
-    height: 45px;
-    padding-right:15px;
     margin-left: 5%;
 }
 
-#filtres li:hover {
-    background-color: #DEEBFF;
-}
-
-#s_infos {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#s_infos i {
-    width: 25px;
-    height: 25px;
-    border: solid 0.5px;
-    border-color: lightgray;
-    border-radius: 20px;
-    color :#0065FC;
-    padding-left: 10px;
-    padding-top: 3px;
-}
 
 
 /*globale main*/
@@ -188,9 +260,6 @@ footer, #hebergement, #populaire {
     background-color: #F2F2F2;
 }
 
-span {
-    font-style: bold;
-}
 
 figure {
     background-color: white;
@@ -199,12 +268,6 @@ figure {
 
 figure, #hebergement, #populaire {
     border-radius: 20px;
-}
-#etoiles {
-    color: #DEEBFF;
-}
-#e_bleu i {
-    color: #0065FC;
 }
 
 #heb-pop {
@@ -258,59 +321,12 @@ h2 {
     padding: 30px;
 }
 
-#titre-pop{
-    display : flex ;
-    justify-content: space-between;
-}
-
-#titre-pop i{
-    font-size: 1.4em;
-}
-
-#l_pop {
-    display : flex ;
-    flex-wrap : wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-}
 
 #f_pop {
-    width: 390px;
-    height: 130px;
-    border-radius: 20px;
-    padding:5px;
-    margin-bottom: 30px;
-    display:flex;
-    
-}
-
-#i_pop_inf {
-    display:flex;
-    flex-direction: column;
-    margin-left: 15px;
-    margin-top: 15px;
-}
-
-#i_pop_inf p {
-    margin-top: 10px;
-}
-
-#f_pop:hover {
-    transform: scale(1.05) translateY(-3px);
-    transition: all 0.2s;
+    width: 380px;
 }
 
 
-#i_pop{
-    border-radius: 20px 0px 0px 20px;
-    width: 40%;
-    height: 100%;
-    object-fit: cover;
-}
-
-figcaption{
-    font-weight: bolder;
-}
 
 /*activite*/
 #activite {
@@ -421,8 +437,13 @@ footer p {
       MOBILE
 ================*/
 
-@media /*(min-width: 320px) and*/ (max-width: 780px) {
-    
+@media (max-width: 768px) {
+
+header, #s_filtres, #s_infos, #recherche {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 /*header*/
 header div {
     text-align: center;
@@ -454,10 +475,6 @@ nav a:hover {
     border-color: #0065FC;
 }
 
-nav ul li{
-    margin: 20px;
-}
-
 
 /*recherche*/
 .loupe {
@@ -477,92 +494,55 @@ nav ul li{
 }
 
 /*filtre*/
+#s_filtres {
+    margin-top: 20px;
+}
+
 #filtres {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
 }
 
-#filtres i {
-    width: 46px;
-    height: 46px;
-    border-radius: 20px;
-    background-color: #DEEBFF;
-    color:#0065FC;
-    margin-top:-1px;
-    margin-left: -2px;
-    padding: 14px;
-    margin-right:10px;
-}
 
 #filtres li {
-    font-weight: bolder;
-    border: solid 0.5px;
-    border-color: lightgray;
-    border-radius: 20px;
-    height: 45px;
-    padding-right:15px;
-}
-
-#filtres li:hover {
-    background-color: #DEEBFF;
-}
-
-#s_infos {
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
-#s_infos i {
-    width: 25px;
-    height: 25px;
-    border: solid 0.5px;
-    border-color: lightgray;
-    border-radius: 20px;
-    color :#0065FC;
-    padding-left: 10px;
-    padding-top: 3px;
-}
 
 
 /*globale main*/
-header, main {
+header {
     margin-left: 15px;
     margin-right: 15px;
 }
 
 
-footer, #hebergement, #populaire {
+footer, #populaire {
     background-color: #F2F2F2;
-}
-
-span {
-    font-style: bold;
 }
 
 figure {
     background-color: white;
     box-shadow: 1px 1px 1rem rgb(200 200 200);
-}
-
-figure, #hebergement, #populaire {
     border-radius: 20px;
 }
-#etoiles {
-    color: #DEEBFF;
-}
-#e_bleu i {
-    color: #0065FC;
-}
+
 
 #heb-pop {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
+h2 {
+    font-size:1.3em;
+}
+
 
 /*hebergement*/
 
 #hebergement {
-    width: 65%;
+    width: 100%;
     height: auto;
     padding: 30px;
 }
@@ -577,7 +557,7 @@ figure, #hebergement, #populaire {
     height: 200px;
     border-radius: 20px;
     padding:5px;
-  
+    margin-bottom: 30px;
 }
 
 #f_heb:hover {
@@ -592,131 +572,61 @@ figure, #hebergement, #populaire {
     object-fit: cover;
 }
 
-h3{
-    margin-top: 20px;
-}
-
 /*populaire*/
 #populaire {
-    width: 30%;
+    width: 100%;
     height: auto;
+    order : -1;
     padding: 30px;
 }
 
-#l_pop {
-    display : flex ;
-    flex-wrap : wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
 #f_pop {
-    width: 360px;
-    height: 130px;
-    border-radius: 20px;
-    padding:5px;
-}
-
-#f_pop:hover {
-    transform: scale(1.05) translateY(-3px);
-    transition: all 0.2s;
+    width: 100%;
 }
 
 
-#i_pop{
-    border-radius: 20px 0px 0px 20px;
-    width: 40%;
-    height: 100%;
-    object-fit: cover;
-}
-
-figcaption{
-    font-weight: bolder;
-}
 
 /*activite*/
 #activite {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    height: auto;
+    padding:30px;
+    width: 100%;
 }
 #act {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 25px;
-    height: 500px;
+    height:auto;
 }
 
 #i_act {
     border-radius: 20px 20px 0px 0px;
-}
-#act1{
-    width: 22%;
-}
-#act1 figure{
-    height: 100%;
-}
-#act1 #i_act{
-    width: 100%;
-    height: 90%;
     object-fit: cover;
-}
-
-#act2 {
-    width: 22%;
-    height: 100%;
-}
-
-#act2 figure {
-    height: 46%;
-}
-
-#act2 #i_act{
     width: 100%;
-    height: 80%;
-    object-fit: cover;
+    height: 40%;
+}
+#act1, #act2, #act3, #act4{
+    margin-bottom: 30px;
 }
 
-#a2-2 {
-    margin-top: 12%;
+#a2-2, #a4-2 {
+    margin-top: 30px;
 }
 
-
-#act3 {
-    width: 22%;
-}
-
-#act3 figure {
-    height: 100%;
-}
-
-#act3 #i_act{
-    width: 100%;
-    height: 90%;
-    object-fit: cover;
-}
-
-#act4 {
-    width: 22%;
-    height: 100%;
-}
-
-#act4 figure {
-    height: 46%;
-}
-
-#act4 #i_act{
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-}
-
-#a4-2 {
-    margin-top: 12%;
-}
 #act figcaption {
     margin: 10px;
     margin-left: 5%;
 }
+ 
+/* mettre bien les tailles
+#act2 + figure, #act4 + figure {
+    height: 200px;
+}
+*/
+
+
 
 /*footer*/
 footer{ 
@@ -737,7 +647,7 @@ footer h3 {
     TABLETTE
   ===========*/
   
-  @media (min-width: 781px) and (max-width: 1349px) {
+  @media (min-width: 768px) and (max-width: 1350px) {
     /*header*/
 header {
     display:flex;
@@ -928,63 +838,14 @@ h2 {
 
 /*populaire*/
 #populaire {
-    width: 32%;
+    width: 100%;
     height: auto;
+    order : -1;
     padding: 30px;
 }
 
-#titre-pop{
-    display : flex ;
-    justify-content: space-between;
-}
-
-#titre-pop i{
-    font-size: 1.4em;
-}
-
-#l_pop {
-    display : flex ;
-    flex-wrap : wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
 #f_pop {
-    width: 390px;
-    height: 130px;
-    border-radius: 20px;
-    padding:5px;
-    margin-bottom: 30px;
-    display:flex;
-    
-}
-
-#i_pop_inf {
-    display:flex;
-    flex-direction: column;
-    margin-left: 15px;
-    margin-top: 15px;
-}
-
-#i_pop_inf p {
-    margin-top: 10px;
-}
-
-#f_pop:hover {
-    transform: scale(1.05) translateY(-3px);
-    transition: all 0.2s;
-}
-
-
-#i_pop{
-    border-radius: 20px 0px 0px 20px;
-    width: 40%;
-    height: 100%;
-    object-fit: cover;
-}
-
-figcaption{
-    font-weight: bolder;
+    width: 100%;
 }
 
 /*activite*/
