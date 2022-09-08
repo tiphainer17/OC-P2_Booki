@@ -38,13 +38,13 @@ form {
     display: flex;
 }
 
-#localisation{
+.localisation{
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
     width: 55px;
 }
 
-#localisation i {
+.localisation i {
     padding:17px;
     padding-left: 22px;
 }
@@ -60,7 +60,7 @@ input[placeholder="Marseille, France"]{
 }
 
 /*filtres*/
-#filtres i {
+.filtres i {
     width: 46px;
     height: 46px;
     border-radius: 20px;
@@ -72,7 +72,7 @@ input[placeholder="Marseille, France"]{
     margin-right:10px;
 }
 
-#filtres li {
+.filtres li {
     font-weight: bolder;
     border: solid 0.5px;
     border-color: lightgray;
@@ -82,17 +82,17 @@ input[placeholder="Marseille, France"]{
     margin-bottom: 20px;
 }
 
-#filtres li:hover {
+.filtres li:hover {
     background-color: #DEEBFF;
 }
 
-#s_infos {
+.s_infos {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 
-#s_infos i {
+.s_infos i {
     width: 25px;
     height: 25px;
     border: solid 0.5px;
@@ -108,31 +108,58 @@ span {
     font-style: bold;
 }
 
-#etoiles {
+.etoiles {
     color: #DEEBFF;
 }
-#e_bleu i {
+.e_bleu i {
     color: #0065FC;
 }
 
-/*populaire*/
-#titre-pop{
-    display : flex ;
-    justify-content: space-between;
-}
-
-#titre-pop i{
-    font-size: 1.4em;
-}
-
-#l_pop {
+/*hebergement*/
+.l_heb {
     display : flex ;
     flex-wrap : wrap;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-#f_pop {
+.f_heb {
+    height: 200px;
+    border-radius: 20px;
+    padding:5px;
+    margin-bottom: 30px;
+}
+
+.f_heb:hover {
+    transform: scale(1.05) translateY(-3px);
+    transition: all 0.2s;
+}
+
+.i_heb{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+/*populaire*/
+.titre-pop{
+    display : flex ;
+    justify-content: space-between;
+}
+
+.titre-pop i{
+    font-size: 1.4em;
+}
+
+.l_pop {
+    display : flex ;
+    flex-wrap : wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.f_pop {
     height: 130px;
     border-radius: 20px;
     padding:5px;
@@ -140,34 +167,49 @@ span {
     display:flex;
 }
 
-#i_pop_inf {
+.i_pop_inf {
     display:flex;
     flex-direction: column;
     margin-left: 15px;
     margin-top: 15px;
 }
 
-#i_pop_inf p {
+.i_pop_inf p {
     margin-top: 10px;
 }
 
-#f_pop:hover {
+.f_pop:hover {
     transform: scale(1.05) translateY(-3px);
     transition: all 0.2s;
 }
 
-#i_pop{
+.i_pop{
     border-radius: 20px 0px 0px 20px;
     width: 40%;
     height: 100%;
     object-fit: cover;
 }
 
-figcaption{
+h4{
     font-weight: bolder;
 }
 
-/*activite, footer a faire et hebergement a finir*/
+
+/*activite, footer a faire */
+
+
+
+/*footer*/
+footer h3 {
+    margin-bottom: 10%;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+
+
 
 /*==============   
     ORDINATEUR
@@ -227,23 +269,23 @@ nav ul {
 
 /*filtre*/
 
-#s_filtres{
+.s_filtres{
     width: 100%;
     margin-top:20px;
     display: flex;
 }
 
-#s_filtres h3 {
+.s_filtres h3 {
     padding-top:10px;
 }
 
-#filtres {
+.filtres {
     width: 100%;
     display: flex;
 }
 
 
-#filtres li {
+.filtres li {
     margin-left: 5%;
 }
 
@@ -256,21 +298,21 @@ header, main {
 }
 
 
-footer, #hebergement, #populaire {
+footer, .hebergement, .populaire {
     background-color: #F2F2F2;
 }
 
 
-figure {
+article {
     background-color: white;
     box-shadow: 1px 1px 1rem rgb(200 200 200);
 }
 
-figure, #hebergement, #populaire {
+article, .hebergement, .populaire {
     border-radius: 20px;
 }
 
-#heb-pop {
+.heb-pop {
     display: flex;
     justify-content: space-between;
 }
@@ -281,155 +323,127 @@ h2 {
 
 /*hebergement*/
 
-#hebergement {
+.hebergement {
     width: 65%;
     height: auto;
     padding: 30px;
 }
-#l_heb {
-    display : flex ;
-    flex-wrap : wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-#f_heb {
+
+.f_heb {
     width: 250px;
-    height: 200px;
-    border-radius: 20px;
-    padding:5px;
-    margin-bottom: 30px;
-}
-
-#f_heb:hover {
-    transform: scale(1.05) translateY(-3px);
-    transition: all 0.2s;
-}
-
-#i_heb{
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
 }
 
 
 
 /*populaire*/
-#populaire {
+.populaire {
     width: 32%;
     height: auto;
     padding: 30px;
 }
 
 
-#f_pop {
-    width: 380px;
+.f_pop {
+    width: 360px;
 }
 
 
 
 /*activite*/
-#activite {
+.activite {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#act {
+.act {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
     height: 500px;
 }
 
-#i_act {
+.i_act {
     border-radius: 20px 20px 0px 0px;
 }
-#act1{
+.act1{
     width: 22%;
 }
-#act1 figure{
+.act1 article{
     height: 100%;
 }
-#act1 #i_act{
+.act1 .i_act{
     width: 100%;
     height: 90%;
     object-fit: cover;
 }
 
-#act2 {
+.act2 {
     width: 22%;
     height: 100%;
 }
 
-#act2 figure {
+.act2 article {
     height: 46%;
 }
 
-#act2 #i_act{
+.act2 .i_act{
     width: 100%;
     height: 80%;
     object-fit: cover;
 }
 
-#a2-2 {
+.a2-2 {
     margin-top: 12%;
 }
 
 
-#act3 {
+.act3 {
     width: 22%;
 }
 
-#act3 figure {
+.act3 article {
     height: 100%;
 }
 
-#act3 #i_act{
+.act3 .i_act{
     width: 100%;
     height: 90%;
     object-fit: cover;
 }
 
-#act4 {
+.act4 {
     width: 22%;
     height: 100%;
 }
 
-#act4 figure {
+.act4 article {
     height: 46%;
 }
 
-#act4 #i_act{
+.act4 .i_act{
     width: 100%;
     height: 80%;
     object-fit: cover;
 }
 
-#a4-2 {
+.a4-2 {
     margin-top: 12%;
 }
-#act figcaption {
+.act h4 {
     margin: 10px;
     margin-left: 5%;
 }
 
 /*footer*/
 
-#footer{
-    width: 80%;
+footer{
     display: flex;
     justify-content: space-between;
     padding: 2%;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 33%;
 }
 
-footer h3 {
-    margin-bottom: 10%;
-}
 
-footer p {
-    margin-bottom: 10px;
-}
 
 }
 
@@ -439,7 +453,7 @@ footer p {
 
 @media (max-width: 768px) {
 
-header, #s_filtres, #s_infos, #recherche {
+header, .s_filtres, .s_infos, .recherche {
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -454,6 +468,7 @@ nav {
     padding-left: 5%;
     padding-right: 5%;
     margin-bottom: 20px;
+    border-bottom: 3px solid #F2F2F2;
 }
 
 nav ul {
@@ -462,7 +477,7 @@ nav ul {
 }
 
 nav li a {
-    padding-bottom: 0.60rem;
+    padding-bottom:20px;
     border-bottom: 3px solid #F2F2F2;
 } 
 
@@ -494,11 +509,11 @@ nav a:hover {
 }
 
 /*filtre*/
-#s_filtres {
+.s_filtres {
     margin-top: 20px;
 }
 
-#filtres {
+.filtres {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -506,7 +521,7 @@ nav a:hover {
 }
 
 
-#filtres li {
+.filtres li {
     margin-bottom: 20px;
 }
 
@@ -519,18 +534,18 @@ header {
 }
 
 
-footer, #populaire {
+footer, .populaire {
     background-color: #F2F2F2;
 }
 
-figure {
+article {
     background-color: white;
     box-shadow: 1px 1px 1rem rgb(200 200 200);
     border-radius: 20px;
 }
 
 
-#heb-pop {
+.heb-pop {
     display: flex;
     flex-wrap: wrap;
 }
@@ -541,59 +556,39 @@ h2 {
 
 /*hebergement*/
 
-#hebergement {
+.hebergement {
     width: 100%;
     height: auto;
     padding: 30px;
 }
-#l_heb {
-    display : flex ;
-    flex-wrap : wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-#f_heb {
-    width: 250px;
-    height: 200px;
-    border-radius: 20px;
-    padding:5px;
-    margin-bottom: 30px;
+
+.f_heb {
+    width: 300px;
 }
 
-#f_heb:hover {
-    transform: scale(1.05) translateY(-3px);
-    transition: all 0.2s;
-}
-
-#i_heb{
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-}
 
 /*populaire*/
-#populaire {
+.populaire {
     width: 100%;
     height: auto;
     order : -1;
     padding: 30px;
 }
 
-#f_pop {
-    width: 100%;
+.f_pop {
+    width: 300px;
 }
 
 
 
 /*activite*/
-#activite {
+.activite {
     margin-top: 10px;
     height: auto;
     padding:30px;
     width: 100%;
 }
-#act {
+.act {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -601,27 +596,27 @@ h2 {
     height:auto;
 }
 
-#i_act {
+.i_act {
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     width: 100%;
     height: 40%;
 }
-#act1, #act2, #act3, #act4{
+.act1, .act2, .act3, .act4{
     margin-bottom: 30px;
 }
 
-#a2-2, #a4-2 {
+.a2-2, .a4-2 {
     margin-top: 30px;
 }
 
-#act figcaption {
+.act h4 {
     margin: 10px;
     margin-left: 5%;
 }
  
 /* mettre bien les tailles
-#act2 + figure, #act4 + figure {
+.act2 + article, .act4 + article {
     height: 200px;
 }
 */
@@ -632,23 +627,27 @@ h2 {
 footer{ 
     display: flex;
     justify-content: space-between;
-    padding: 2%;
+    padding: 40px;
     padding-left: 5%;
     padding-right: 5%;
+    flex-wrap: wrap;
 }
 
-footer h3 {
-    margin-bottom: 10%;
+.propos, .heber, .assistance {
+    width: 100%;
+    margin-top: 20px;
 }
 
 
 }
+
+
   /*===========
     TABLETTE
   ===========*/
-  
-  @media (min-width: 768px) and (max-width: 1350px) {
-    /*header*/
+  /*1260-1350*/
+  @media (min-width: 769px) and (max-width: 1350px) {
+/*header*/
 header {
     display:flex;
     justify-content: space-between;
@@ -681,274 +680,184 @@ nav ul {
     margin-right: 50px;
 }
 
-nav ul li{
-    margin: 20px;
-}
-
-
 /*recherche*/
 .loupe {
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 15px 15px 15px 15px;
     background-color: #0065FC;
     border: none;
-    color: white;
+    color: #0065FC;
     font-weight: bolder;
-    width: 110px;
+    width: 55px;
     font-size: 15px;
+    overflow : hidden;
+    margin-left: -7px;
 }
-
 .loupe i {
-    display : none;
+    color:white;
+    margin-top: 30%;
 }
-
 
 /*filtre*/
-
-#s_filtres{
-    width: 100%;
-    margin-top:20px;
-    display: flex;
-}
-
-#s_filtres h3 {
-    padding-top:10px;
-}
-
-#filtres {
-    width: 100%;
-    display: flex;
-}
-
-#filtres i {
-    width: 46px;
-    height: 46px;
-    border-radius: 20px;
-    background-color: #DEEBFF;
-    color:#0065FC;
-    margin-top:-1px;
-    margin-left: -2px;
-    padding: 14px;
-    margin-right:10px;
-}
-
-#filtres li {
-    font-weight: bolder;
-    border: solid 0.5px;
-    border-color: lightgray;
-    border-radius: 20px;
-    height: 45px;
-    padding-right:15px;
-    margin-left: 5%;
-}
-
-#filtres li:hover {
-    background-color: #DEEBFF;
-}
-
-#s_infos {
+.s_filtres {
     margin-top: 20px;
+}
+
+.filtres {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+
+.filtres li {
     margin-bottom: 20px;
 }
 
-#s_infos i {
-    width: 25px;
-    height: 25px;
-    border: solid 0.5px;
-    border-color: lightgray;
-    border-radius: 20px;
-    color :#0065FC;
-    padding-left: 10px;
-    padding-top: 3px;
-}
 
 
 /*globale main*/
-header, main {
-    margin-left: 50px;
-    margin-right: 50px;
+header, .s_filtres, .s_infos, .recherche, .activite {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
-footer, #hebergement, #populaire {
+footer, .populaire {
     background-color: #F2F2F2;
 }
 
-span {
-    font-style: bold;
-}
-
-figure {
+article {
     background-color: white;
     box-shadow: 1px 1px 1rem rgb(200 200 200);
-}
-
-figure, #hebergement, #populaire {
     border-radius: 20px;
 }
-#etoiles {
-    color: #DEEBFF;
-}
-#e_bleu i {
-    color: #0065FC;
-}
 
-#heb-pop {
+
+.heb-pop {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+}
+h2 {
+    font-size:1.3em;
 }
 
-h2 {
-    font-size:1.4em;
-}
 
 /*hebergement*/
 
-#hebergement {
-    width: 65%;
+.hebergement {
+    width: 100%;
     height: auto;
     padding: 30px;
 }
-#l_heb {
-    display : flex ;
-    flex-wrap : wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-#f_heb {
-    width: 250px;
-    height: 200px;
-    border-radius: 20px;
-    padding:5px;
-    margin-bottom: 30px;
-}
 
-#f_heb:hover {
-    transform: scale(1.05) translateY(-3px);
-    transition: all 0.2s;
+.f_heb {
+    width: 300px;
 }
-
-#i_heb{
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-}
-
 
 
 /*populaire*/
-#populaire {
+.populaire {
     width: 100%;
     height: auto;
     order : -1;
     padding: 30px;
 }
 
-#f_pop {
-    width: 100%;
+.f_pop {
+    width: 300px;
 }
 
 /*activite*/
-#activite {
+.activite {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#act {
+.act {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
     height: 500px;
 }
 
-#i_act {
+.i_act {
     border-radius: 20px 20px 0px 0px;
 }
-#act1{
+.act1{
     width: 22%;
 }
-#act1 figure{
+.act1 article{
     height: 100%;
 }
-#act1 #i_act{
+.act1 .i_act{
     width: 100%;
     height: 90%;
     object-fit: cover;
 }
 
-#act2 {
+.act2 {
     width: 22%;
     height: 100%;
 }
 
-#act2 figure {
+.act2 article {
     height: 46%;
 }
 
-#act2 #i_act{
+.act2 .i_act{
     width: 100%;
     height: 80%;
     object-fit: cover;
 }
 
-#a2-2 {
+.a2-2 {
     margin-top: 12%;
 }
 
 
-#act3 {
+.act3 {
     width: 22%;
 }
 
-#act3 figure {
+.act3 article {
     height: 100%;
 }
 
-#act3 #i_act{
+.act3 .i_act{
     width: 100%;
     height: 90%;
     object-fit: cover;
 }
 
-#act4 {
+.act4 {
     width: 22%;
     height: 100%;
 }
 
-#act4 figure {
+.act4 article {
     height: 46%;
 }
 
-#act4 #i_act{
+.act4 .i_act{
     width: 100%;
     height: 80%;
     object-fit: cover;
 }
 
-#a4-2 {
+.a4-2 {
     margin-top: 12%;
 }
-#act figcaption {
+.act h4 {
     margin: 10px;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 /*footer*/
-
-#footer{
-    width: 80%;
+footer{
     display: flex;
     justify-content: space-between;
     padding: 2%;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 33%;
 }
-
-footer h3 {
-    margin-bottom: 10%;
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-
-}
+  }
